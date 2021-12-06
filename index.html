@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        table, th, tr, td {
+            border: 1px solid black;
+        }
+    </style>
+    <title>Lesson 3</title>
+    <Link rel="icon" type="image/x-icon" href="./images/icon.jpeg">
+</head>
+
+<body>
+    <!-- Formatting section -->
+    <h2>Formatting</h2>
+    <hr>
+    <p>There are a lot of specific tags in <abbr title="Hyper Text Markup Language">HTML</abbr> for formatting the text,
+        without using css, and more importantly to use <strong>correct structure</strong> by HTML.
+        for Example: you can show the <b>bold</b> text or <strong>strong</strong> text. you can <mark>highlite</mark>
+        text. even <i>italic</i> or <em>emphasized</em> text.
+        you can show chemical formulas by only HTML. for instance <sub>2</sub><b>He</b>. you can reference to some
+        sources like wikipedia<sup>[1]</sup>. you can use <small>small</small> texts that are not more important.
+        or <del>deleted</del> texts.</p>
+    <br>
+    <br>
+
+    <!-- Quotation section -->
+    <h2>Quotation</h2>
+    <hr>
+    <p>Here is a quote from WWF's website:</p>
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For 50 years, WWF has been protecting the future of nature.
+        The world's leading conservation organization,
+        WWF works in 100 countries and is supported by
+        1.2 million members in the United States and
+        close to 5 million globally.
+    </blockquote>
+    <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+    <br>
+    <br>
+
+    <!-- Image Link section -->
+    <h2>Image Link</h2>
+    <hr>
+    <p>You can use images in links. Here is a sample:</p>
+    <a href="https://github.com" target="_blank">
+        <img src="./images/github.jpeg" alt="github logo" />
+    </a>
+    <br>
+    <br>
+
+    <!-- Table and List section -->
+    <h2>Table and List</h2>
+    <hr>
+    <ol type="I" start="2">
+        <li>
+            <table>
+                <caption>A complex table</caption>
+                <tr>
+                    <th colspan="3">Invoice #123456789</th>
+                    <th>14 January 2025
+                </tr>
+                <tr>
+                    <td colspan="2"> <strong>Pay to:</strong><address> Acme Billing Co.<br> 123 Main St.<br> Cityville, NA 12345</address></td>
+                    <td colspan="2"> <strong>Customer:</strong><address> John Smith<br> 321 Willow Way<br> Southeast
+                        Northwestershire, MA 54321 </address></td>
+                </tr>
+                <tr>
+                    <th>Name / Description</th>
+                    <th>Qty.</th>
+                    <th>@</th>
+                    <th>Cost</th>
+                </tr>
+                <tr>
+                    <td>Paperclips</td>
+                    <td>1000</td>
+                    <td>0.01</td>
+                    <td>10.00</td>
+                </tr>
+                <tr>
+                    <td>Staples (box)</td>
+                    <td>100</td>
+                    <td>1.00</td>
+                    <td>100.00</td>
+                </tr>
+                <tr>
+                    <th colspan="3">Subtotal</th>
+                    <td> 110.00</td>
+                </tr>
+                <tr>
+                    <th colspan="2">Tax</th>
+                    <td><mark> 8% </mark></td>
+                    <td>8.80</td>
+                </tr>
+                <tr>
+                    <th colspan="3">Grand Total</th>
+                    <td><em>$ 118.80</em></td>
+                </tr>
+            </table>
+        </li>
+        <br>
+        <li>
+            <table>
+                <caption>Another table</caption>
+                <!-- Row A -->
+                <tr>
+                    <td colspan="3">some text</td>
+                    <td>some text</td>
+                    <td rowspan="3">some text</td>
+                </tr>
+                <!-- Row B -->
+                <tr>
+                    <td>some text</td>
+                    <td rowspan="2">some text</td>
+                    <td>some text</td>
+                    <td>some text</td>
+                </tr>
+                <!-- Row C -->
+                <tr>
+                    <td rowspan="2">some text</td>
+                    <td>some text</td>
+                    <td>some text</td>
+                </tr>
+                <!-- Row D -->
+                <tr>
+                    <td colspan="3">some text</td>
+                    <td>some text</td>
+                </tr>
+                <!-- Row E -->
+                <tr>
+                    <td>some text</td>
+                    <td>some text</td>
+                    <td colspan="3">some text</td>
+                </tr>
+            </table>
+        </li>
+    </ol>
+
+</body>
+
+</html>
